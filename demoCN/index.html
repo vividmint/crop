@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>适用于移动端网页上传裁剪图片功能插件</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <span style="display:none;">
+<script src="http://s94.cnzz.com/stat.php?id=4106941&web_id=4106941" language="JavaScript"></script>
+</span>
+    <!-- 代码部分begin -->
+    <button class="button blue rarrow file-input-mask">上传图片<input type="file" id="file" accept="image/*" capture="camera"/></button>
+    <img id="previewResult" />
+    <div class="app" id="uploadPage">
+        <div class="bar">
+            <a class="back pull-left" id="closeCrop"><i class="fa fa-reply"></i></a>
+            <a id="getFile" class="pull-right">使用</a>
+          </div>
+        <div class="main">
+            <canvas class="upload-mask"></canvas>
+            <div class="preview-box">
+                <img id="preview" />
+            </div>
+            <canvas class="photo-canvas"></canvas>
+            <a id="rotateBtn">
+                <i class="fa fa-rotate-right  fa-3x"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="./js/require.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+
+</html>
